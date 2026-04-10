@@ -1,3 +1,3 @@
-scoreboard players remove Solstice.Day.Total Solstice 60
-execute if score Solstice.Day.Total Solstice matches ..-1 run scoreboard players set Solstice.Day.Total Solstice 0
+execute if score Solstice.Mode Solstice matches 0 if score Solstice.Day.Total Solstice matches 60.. run scoreboard players remove Solstice.Day.Total Solstice 60
+execute if score Solstice.Mode Solstice matches 1 if score Solstice.Day.Total Solstice matches 60.. run function solstice:config/ratiodecreaseday60
 function solstice:.config
