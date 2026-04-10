@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "id": [
+              1906707254,
+              -884913547,
+              -1392733193,
+              -1125821020
+            ]
+          }
+        }
+      },
+      "title": "Tophat Man",
+      "description": "Twitch: The__TophatMan\nYoutube: The_TophatMan",
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "global:root",
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:tick"
+      }
+    }
+  }

@@ -1,0 +1,40 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": [
+      {
+        "text": "An addon to "
+      },
+      {
+        "text": "Time Adjustment",
+        "color": "gold",
+        "bold": true
+      },
+      {
+        "text": " allowing individual control of the length of day and night.\nby",
+        "color": "white",
+        "bold": false
+      },
+      {
+        "text": "The_TophatMan",
+        "color": "#00ff00",
+        "bold": true
+      },
+      {
+        "text": " (",
+        "color": "white",
+        "bold": false
+      },
+      {
+        "text": "twitch.tv/The__TophatMan",
+        "color": "#9146FF",
+        "bold": false
+      },
+      {
+        "text": ")",
+        "color": "white",
+        "bold": false
+      }
+    ]
+  }
+}
