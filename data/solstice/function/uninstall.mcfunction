@@ -1,0 +1,3 @@
+scoreboard objectives remove Solstice
+tellraw @a [{"text": "Time Adjustment: Solstice", "bold": true, "color": "yellow"}, {"text": " has been ", "bold": false, "color": "white"}, {"text": "uninstalled", "bold": false, "color": "red"}]
+tellraw @a [{"text": "Run ", "color": "white", "bold": false}, {"text": "/datapack disable \"file/TimeAdjst-Solstice_", "color": "red", "bold": false, "clickEvent": {"action": "suggest_command", "value": "/datapack disable \"file/TimeAdjust-Solstice_"}, "hoverEvent": {"action": "show_text", "value": {"text": "Click to run (must have sufficient permissions)"}}}, {"text": ", using tab completion to finish uninstallation", "color": "white", "bold": false}]
