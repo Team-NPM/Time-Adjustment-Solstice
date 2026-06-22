@@ -1,3 +1,2 @@
-execute if score Solstice.Mode Solstice matches 0 if score Solstice.Night.Total Solstice matches 5.. run scoreboard players remove Solstice.Night.Total Solstice 5
-execute if score Solstice.Mode Solstice matches 1 if score Solstice.Night.Total Solstice matches 5.. run function solstice:config/ratiodecreasenight5
-function solstice:.config
+execute if score Solstice.Mode Solstice matches 0 run return run function solstice:config/setdecreasenight5
+execute if score Solstice.Mode Solstice matches 1 if score Solstice.Night.Total Solstice matches 6.. run function solstice:config/ratiodecreasenight5

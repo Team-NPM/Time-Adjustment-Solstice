@@ -1,4 +1,4 @@
-execute unless entity @s[advancements={global:timeadjust=true}] run return run tellraw @s [{"text": "!! WARNING !! TIME ADJUSTMENT: SOLSTICE CANNOT RUN WITHOUT TIME ADJUSTMENT. PLEASE INSTALL IT ","color": "red"},{"text": "HERE", "color": "blue", "underlined": true, "clickEvent": {"action": "open_url", "value": "https://modrinth.com/datapack/time-adjustment"}}]
+execute unless entity @s[advancements={global:timeadjustmentpack=true}] run return run tellraw @s [{"text": "!! WARNING !! TIME ADJUSTMENT: SOLSTICE CANNOT RUN WITHOUT TIME ADJUSTMENT. PLEASE INSTALL IT ","color": "red"},{"text": "HERE", "color": "blue", "underlined": true, "clickEvent": {"action": "open_url", "value": "https://modrinth.com/datapack/time-adjustment"}}]
 
 # Calculate display numbers
     scoreboard players operation Solstice.Day.Display.Hours Solstice = Solstice.Day.Total Solstice
@@ -19,9 +19,6 @@ execute unless entity @s[advancements={global:timeadjust=true}] run return run t
 # Display Times
     tellraw @s [{"text": "Day Length:  ", "color": "yellow", "bold": false}, {"score": {"name": "Solstice.Day.Display.Hours", "objective": "Solstice"}, "color": "green", "bold": true}, {"text": " hours, ", "color": "yellow", "bold": false}, {"score": {"name": "Solstice.Day.Display.Minutes", "objective": "Solstice"}, "color": "green", "bold": true}, {"text": " minutes", "color": "yellow", "bold": false}]
     tellraw @s [{"text": "Night Length: ", "color": "yellow", "bold": false}, {"score": {"name": "Solstice.Night.Display.Hours", "objective": "Solstice"}, "color": "green", "bold": true}, {"text": " hours, ", "color": "yellow", "bold": false}, {"score": {"name": "Solstice.Night.Display.Minutes", "objective": "Solstice"}, "color": "green", "bold": true}, {"text": " minutes", "color": "yellow", "bold": false}]
-
-# Presets (Disabled for now. Too complex for me to handle atm)
-# execute if score Solstice.Day.Total Solstice = Solstice.Night.Total Solstice run tellraw @s [{"text": "Presets: [", "color": "yellow"},{"text": "1:1", "color": "gold", "bold": true}, {"text": "] [", "color": "yellow", "bold": false}, {"text": "Summer Solstice", "color": "yellow", "bold": false, "clickEvent": {"action": "run_command", "value": "/function solstice:config/preset1"}}, {"text": "] [", "color": "yellow", "bold": false}, {"text": "Winter Solstice", "color": "yellow", "bold": false, "clickEvent": {"action": "run_command", "value": "/function solstice:config/preset2"}},{"text": "]", "color": "yellow", "bold": false}]
 
 tellraw @s {"text": ""}
 
